@@ -68,7 +68,9 @@ extension Pager {
         let size = CGSize(width: self.size.width - 2 * sideInsets,
                           height: self.size.height - 2 * sideInsets)
         let side = min(size.width, size.height)
-        if itemAspectRatio > 1 {
+        if itemAspectRatio == 0 {
+            return size
+        } else if itemAspectRatio > 1 {
             return CGSize(width: side, height: side / itemAspectRatio)
         } else {
             return CGSize(width: side * itemAspectRatio, height: side)
