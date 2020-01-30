@@ -190,7 +190,7 @@ public struct Pager<Element, ID, PageView>: View  where PageView: View, Element:
                             .overlay(
                                 Circle()
                                     .stroke(Color.gray,lineWidth: 1)
-                            ).foregroundColor(Color.white)
+                            ).foregroundColor(self.data.firstIndex(of: item) == self.page ? Color.gray : Color.white)
                             .frame(width: 6, height: 6, alignment: .center)
                     }
                     .frame(width: 20, height: 20, alignment: .center)
