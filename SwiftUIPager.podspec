@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SwiftUIPager"
-  s.version      = "1.2.2"
+  s.version      = "1.2.3"
   s.summary      = "Native pager for SwiftUI. Easily to use, easy to customize."
 
   s.description  = <<-DESC
@@ -15,10 +15,10 @@ Pod::Spec.new do |s|
   s.platforms = { :ios => "13.0", :osx => "10.15", :watchos => "6.0" }
   s.swift_version = "5.1"
 
-  s.source       = { :git => "https://github.com/fermoya/SwiftUIPager.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/ChrDel/SwiftUIPager.git", :tag => "#{s.version}" }
   s.source_files  = "Sources/SwiftUIPager/**/*.swift"
 
   s.xcconfig = { "SWIFT_VERSION" => "5.1" }
-  s.documentation_url = "https://github.com/fermoya/SwiftUIPager/blob/master/README.md"
+  s.documentation_url = "https://github.com/ChrDel/SwiftUIPager/blob/master/README.md"
 
 end
